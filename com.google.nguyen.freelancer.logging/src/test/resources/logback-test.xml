@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration debug="true">
+	<appender name="LOCALSYSLOG" class="com.google.nguyen.freelancer.logging.LocalSyslogAppender">
+		<ident></ident>
+		<option>LOG_CONS | LOG_PID | LOG_NDELAY</option>
+		<facility>LOG_LOCAL1</facility>
+	</appender>
+
+	<root level="DEBUG">
+		<appender-ref ref="LOCALSYSLOG" />
+	</root>
+</configuration>
